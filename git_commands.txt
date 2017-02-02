@@ -1,0 +1,68 @@
+git config --global user.name "Phil"
+git config --global user.email "phillip5914619@gmail.com"
+git config --list
+git config user.email
+git help
+git help commit
+
+git init
+git add .
+git commit -m "This is our first commit"
+git log
+git log --author="Phil"
+
+//working copy -> staging area -> repository
+git add second.txt
+git commit -m "adding the second file to the repo"
+
+
+git diff //comparing working coopy and staging area  
+git diff test.txt
+git diff --staged //compare stagging area and repo
+git rm third.txt
+git mv second.txt second2.txt
+
+git commit -am "DIrectly commit to the repo" // this is useful when you want to commit the entire thing
+
+git checkout -- index.html //Reverting index.html 
+git checkout -- .		//revert the entire directory
+
+git reset HEAD first.txt //Remove first.txt from the stagging area 
+
+------------------------
+commit 3097b67316dc6c8be97946dcf248adf52273ca4c
+Author: Phil <@gmail.com>
+Date:   Tue Jan 31 16:52:31 2017 +0800
+
+    bad commit
+
+commit 79fd7ee866e8e521a30e73a5c320e048a6e682a9
+Author: Phil <@gmail.com>
+Date:   Tue Jan 31 16:50:54 2017 +0800
+
+    some random commit
+-----------------------------------------------------
+git checkout 79fd -- first.txt //Checkout the 79fd7ee version of first.txt 
+git commit -am "Undoing bad commit"
+
+
+
+
+
+
+
+git remote add thenewstocktonRepo https://github.com/thenewstockton/git_example.git   //thenewstocktonRepo is a nickname for the url
+git remote 
+git push -u thenewstocktonRepo master
+
+git remote set-url thenewstocktonRepo https://github.com/thenewstockton/git_example2.git //changed the nickname 
+git remote rm thenewstocktonRepo //removed the nickname 
+
+-------------------------------------
+git pull thenewstocktonRepo master ||   Updates changes from github
+-------------------------------------
+		is equivalent to 
+-------------------------------------
+git fetch thenewstocktonRepo 	   ||   Fetches new work by other people
+git merge thenewstoctkonRepo/master||   Merging combines your local changes with changes made by others 
+-------------------------------------
