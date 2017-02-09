@@ -66,3 +66,4 @@ git pull thenewstocktonRepo master ||   Updates changes from github
 git fetch thenewstocktonRepo 	   ||   Fetches new work by other people
 git merge thenewstoctkonRepo/master||   Merging combines your local changes with changes made by others 
 -------------------------------------
+a lot more
