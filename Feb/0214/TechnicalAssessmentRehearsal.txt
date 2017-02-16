@@ -1,0 +1,11 @@
+Function should be < 10 lines
+Clean all unused "using namespaces"
+Parameter variable naming should be improved
+Tell "Why to do"
+Use attributes for fake data
+Test Method
+Don't move around while demo  (Definition and usages should be closer)
+Parameter naming( info , data) & (url1, url2)
+OOP (Private vs public)
+Inform before jumping to definition
+Add comments for people who don't understand
