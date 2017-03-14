@@ -1,4 +1,8 @@
-Designed Alliance: Learning Labaratory, Share your thoughts, 
-Refactoring:
-Code Smells:
-Others: Low coupling, High Cohesion
+Designed Alliance: 
+  Learning Labaratory, Share your thoughts, 
+Refactoring: 
+  Extract Method, move method, inline variable, introduce var, extract class, introduce parameter, inline parameter, rename, introduce param object, inline method
+Code Smells: 
+  feature envy, dulicated code, primitive obsession, switch code, long method, temp var, lazy class, long parameter list, speculative generality, data class
+Others: 
+  Low coupling, High Cohesion.  Single responsibility principle
