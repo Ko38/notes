@@ -1,0 +1,74 @@
+1. Poor Names:
+    a. Mysterious Names
+        SqlDataReader dr1; //dataReader
+        int od;  //overdueDays
+        void Button1_Click(); //CheckAvailability_Click()
+        class Page1{} //ViewCustomerPage
+    b. Meaningless Names
+        void BeginCheckFunctionality_StoreClientSideCheckboxIDsArray();
+    c. Names with Encodings
+        int iMaxRequests; // i represents int
+        var m_objCollection = new StringCollection(); //countryNames
+    d. Ambiguous Names
+        bool MultiSelect() {}
+        int? incidentNameId;
+    e. Noisy Names
+        Customer theCustomer; /customer
+        List<Customer> listOfApprovedCustomers;  //approvedCustomers
+    Conclusion:
+        * Not too short, not too long
+        * Meaningful
+        * Reveal intention
+        * Chosen from problem domain
+2. Inconsistent Naming Conventions:
+    Examples:   Customer GetCustomer(int _id)
+                Customer saveCustomer(Customer Customer);
+                private int customerId;
+    PascalCase: 
+    camelCase:
+    .NET Naming Conventions: 
+        public class Customer { private int _id;  public string Name{get;set;} public void Charge(int amount){var tax = 0;}}
+        
+3. Poor Method Signatures:
+    Example: Orange GetCustomer(int airplane);
+             void Parse(int command); //int Parse(string command);
+    Conclusion:
+        * Check the return type
+        * Check the method name
+        * Check the parameters
+
+4. Long Parameter List
+    Example: CheckNotifications(null, 1, true, false, DateTime.Now);
+    Conclusion:
+        * Less than 3 parameters
+
+5. output parameters
+    Example: 
+        int count = 0;
+        var customers = GetCustomers(pageIndex, out count);
+        
+        int count = 0; 
+        bool more = false;
+        var customers = GetCustomers(pageIndex, out count, out more);
+    Conclusion:
+        * Avoid them!
+        * Return an object from a method instead
+
+6. Variable Declarations on the Top:
+    C compilers have that problem. We need to declare variables at where they are used
+
+7. Magic numbers:
+    Conclusion: use constants or enums
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
