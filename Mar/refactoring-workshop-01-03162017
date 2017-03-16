@@ -1,0 +1,14 @@
+Designed Alliance:  
+    Learning Laboratory, Permission to train you, Respectfully intrude and challenge, Ask for what you need
+Code Smells:
+    Magic number, Feature Envy, Data clump, Duplicate code, primitive obsession, temporary variable,
+    uncommunicative name, switch statement
+Refactoring:
+    Extract method, Introduce Field, Move method, Introduce variable, rename, change signature
+
+
+Others:
+    Single Responsibility Principle. Low coupling, high cohesion
+
+Feedback: 
+    Introduction is a little too long
