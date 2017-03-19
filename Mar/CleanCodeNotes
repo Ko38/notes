@@ -165,8 +165,14 @@
                             Don't explain what, explain whys and hows
                 
                 
-                
-                
+12. Long methods:  (Methods with more than 10 lines)
+    * Hard to understand
+    * hard to change
+    * hard to reuse
+    * we want methods that specialize in one thing
+    * Single Responsibility Principle
+        - A class / method should do only one thing, and do it very well
+    * Method best practices: should be less than 10 lines. should do only one thing.
                 
                 
                 
