@@ -59,9 +59,71 @@
 
 7. Magic numbers:
     Conclusion: use constants or enums
-                
-                
-                
+
+8. Nested Conditionals
+    a. Use Ternary Operator:
+        if(a) c = someValue;
+        else anotherValue;
+    you can use: c = (a) ? someValue : anotherValue
+    
+        avoid Ternary operator abuse like a = b ? c:d ? e : f
+    b. simplify true/false
+        if(a) b = true;
+        else b = false;
+    you can use: b = a;
+    c. Combine
+        if(a){
+            if(b){
+                //...
+            }
+        }
+        =>  if(a && b) {//...}
+    d. Early Exit
+        if(a){
+            if(b){
+                //...
+            }
+        }
+        =>
+        if(!a)return;
+        if(!b) return;
+        
+        //...
+    e. Swap Orders
+        if(a){
+            if(b){
+                isValid = true;
+            }
+        }
+        if(c){
+            if(b){
+                isValid = true;
+            }
+        }
+        
+        =>
+        
+        if(b){
+            if(a || c){
+                isValid = true;
+            }
+        }
+        
+        =>
+        
+        isValid = b && (a || c);
+    
+    
+    if(a&&(b ||c)&&!d||e&&(f&&*!g||h))  //this is not readable!!!!!!!!
+
+9. Switch Statements
+        Open Closed Principle
+        Polymorphism
+    Conclusion:  Replace them with polymorphic dispatch
+                Use push member down refactoring
+
+10. Duplicated Code
+    DRY: Don't repeat yourself
                 
                 
                 
