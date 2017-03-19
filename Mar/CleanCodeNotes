@@ -125,7 +125,44 @@
 10. Duplicated Code
     DRY: Don't repeat yourself
                 
-                
+11. Comments
+    a. Stating the obvious
+        //Returns the list of customers
+        public List<Customer> GetCustomers(){}
+        
+        //Create a new connection to the database
+        var connection = new SqlConnection();
+        
+        //If the number of overdue days is less than 5, notify the customer. otherwise, issue a fine
+        if(overdueDays < 5) NotifyCustomer();
+        else IssueFine();
+        
+        Problem : We don't necessarily update the comments, it becomes outdated
+        
+        The utimate comment is the code itself
+    b. version history
+    
+        //Prior to v1.3
+        if(isActive){}
+        
+        // 1 Jan 2000 - john
+        // 4 jan 2034 - scot
+        // 21 dec 2005 - andy
+        //...
+        //...
+        public class WorkScheduler
+        
+    c. Clarify the code
+        var pf = 10; //Pay Frequency
+    
+    d. Dead Code
+        //public class Workscheduler
+        //{
+        //}
+        
+    Comments: explain why and hows, don't explain what
+    Comments Best Practices: Don't write comments, re-write your code
+                            Don't explain what, explain whys and hows
                 
                 
                 
