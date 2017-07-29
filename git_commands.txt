@@ -70,3 +70,7 @@ a lot more and commited by thenewstockton
 
 
 git reset --hard origin/master    //To fix the issue "your branch is ahead of master"
+
+
+git config --system --unset credential.helper
+
